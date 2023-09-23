@@ -1,0 +1,17 @@
+{%extends 'base.html' %}
+
+
+{% block title %}
+    Main Page
+
+{%endblock%}
+
+{% block content%}
+    <h1>Main Page</h1>
+    
+        
+    <a href="{{ url_for('registration_form')}}">
+    <button class="btn btn-primary" type="submit">Регистрация</button>
+    </a>
+            
+{%endblock%}
