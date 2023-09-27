@@ -1,0 +1,21 @@
+{%extends 'layout.html' %}
+
+{% block title %}
+Social Network
+
+{%endblock%}
+
+{% block content%}
+    <h1>Соцсеть</h1>
+    {% for user in users%}
+     <tr>
+                
+                <td>{{ user.user_name}}</td>
+                <td>{{ user.user_email}}</td>
+                <td>{{ user.user_password}}</td>
+                <br />
+                
+            </tr>
+    {%endfor%}
+
+{% endblock%}
