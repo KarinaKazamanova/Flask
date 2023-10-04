@@ -65,7 +65,7 @@ async def delete_task(id: int):
             # (можно установить период времени, в который такое возможно сделать, 
             # по истечение данного периода уже можно будет непосредственно удалить пользователя)
             users.remove(user)
-            return f"User {3} deleted successfully"
+            return f"User {id} deleted successfully"
     raise HTTPException(status_code=404, detail=f'Task {id} not found')
 
 if __name__ == '__main__':
